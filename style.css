@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Montserrat:wght@800&display=swap');
+
+body {
+  /* height: 100vh; */
+  width: 100vw;
+  background-image: url('./assets/bg_desk.png');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  background-color: black;
+}
+.container_mob {
+  display: none;
+  /* height: 100vh; */
+  width: 100vw;
+  /* padding: 14px 20px; */
+  padding-top: 14px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.container_desk {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 5% 6%
+}
+.container_text {
+  display: flex;
+  flex-direction: column;
+}
+.logos {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 50px;
+}
+.logo_1 {
+  width: 270px;
+  height: 100px;
+  background-image: url('./assets/logo_desk.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.logo_2 {
+  width: 314px;
+  height: 147px;
+  background-image: url('./assets/logo_2_desk.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.main_text {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 122.52%;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  max-width: 742px;
+  margin-bottom: 30px;
+}
+.fancytext {
+  width: 649px;
+  height: 61px;
+  background-image: url('./assets/india_fancywords_desk.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 60px;
+}
+.controls {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 45px;
+}
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 111.111px;
+  width: 458px;
+  height: 80px;
+  left: 140px;
+  top: 654px;
+  background: radial-gradient(103.29% 667.42% at 55.06% 56.8%, rgba(255, 255, 255, 0.27) 0%, rgba(95, 0, 17, 0.5) 100%), #FF0000;
+  box-shadow: 0px 4px 20px #BC0E15;
+  border-radius: 66.6667px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 122.52%;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+}
+.btn:hover {
+  background: #E62930;
+  box-shadow: 0px 4px 20px #BC0E15;
+  cursor: pointer;
+}
+.btn:active {
+  background: #CD050C;
+  box-shadow: 0px 4px 20px #BC0E15;
+}
+.btn_apple {
+  height: 80px;
+  width: 80px;
+  background-image: url('./assets/btn_ios.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.btn_apple:hover {
+  cursor: pointer;
+}
+.btn_android {
+  height: 80px;
+  width: 80px;
+  background-image: url('./assets/btn_android.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.btn_android:hover {
+  cursor: pointer;
+}
+.paysys {
+  height: 51px;
+  width: 766px;
+  background-image: url('./assets/india_paysys_desk.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media (max-width: 550px) {
+  .container_desk {
+    display: none;
+  }
+  .container_mob {
+    display: flex;
+  }
+  .container_text {
+    align-items: center;
+    justify-content: space-between;
+    max-height: 700px;
+    height: 90%;
+  }
+  body {
+    background-image: url('./assets/bg_mob.png');
+    background-position: 50% -20%;
+    background-size: contain;
+    /* overflow: hidden; */
+  }
+  .logos {
+    /* margin-bottom: 450px; */
+    margin-bottom: 0px;
+    gap: 20px;
+  }
+  .logo_1 {
+    height: 30px;
+    width: 80px;
+    background-image: url('./assets/logo_mob.svg');
+  }
+  .logo_2 {
+    height: 41.6px;
+    width: 88.5px;
+    background-image: url('./assets/logo_2_mob.png');
+  }
+  .controls {
+    width: 100%;
+    justify-content: flex-end;
+    margin-bottom: 0;
+  }
+  .btn_apple {
+    height: 38px;
+    width: 38px;
+  }
+  .btn_android {
+    height: 38px;
+    width: 38px;
+  }
+  .btn {
+    width: 278px;
+    height: 45px;
+    font-size: 20px;
+    line-height: 122.52%;
+    letter-spacing: 0.03em;
+    margin-bottom: 25px;
+  }
+  .main_text {
+    font-size: 24px;
+    line-height: 122.52%;
+    letter-spacing: 0.03em;
+    max-width: 295px;
+    text-align: center;
+    margin-bottom: 10px;
+    /* text-shadow: 1px 0px 10px #000000; */
+    text-shadow: #000 1px 0 10px;
+  }
+  .fancytext {
+    width: 260px;
+    height: 25px;
+    background-image: url('./assets/india_fancywords_mob.png');
+    margin-bottom: 20px;
+  }
+  .paysys {
+    width: 320px;
+    height: 21px;
+    background-image: url('./assets/india_paysys_mob.png');
+  }
+  .mob_body {
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-height: 700px) {
+  body {
+    background-image: url('./assets/bg_mob.png');
+    background-position: 50% -20%;
+    background-size: cover;
+    /* overflow: hidden; */
+  }
+}
